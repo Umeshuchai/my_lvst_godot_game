@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://ca1bjxi66jqpo"]
+
+[ext_resource type="Texture2D" uid="uid://btx2nrs65ycty" path="res://img/Screenshot 2025-05-03 181034.png" id="1_7lkgq"]
+[ext_resource type="Script" uid="uid://b1ebjfcwghuai" path="res://create_line.gd" id="1_od8nd"]
+[ext_resource type="Texture2D" uid="uid://cj7ntgdl8qkyj" path="res://img/Screenshot 2025-05-03 185121.png" id="2_od8nd"]
+[ext_resource type="Texture2D" uid="uid://bii5j1n4vnupv" path="res://img/Screenshot 2025-05-03 185108.png" id="3_du3lw"]
+
+[node name="create line" type="Node2D"]
+script = ExtResource("1_od8nd")
+
+[node name="board" type="Sprite2D" parent="."]
+position = Vector2(249, 362)
+texture = ExtResource("1_7lkgq")
+
+[node name="userprofile1" type="Sprite2D" parent="."]
+position = Vector2(67, 57)
+rotation = 3.14352
+scale = Vector2(0.433719, 0.433719)
+texture = ExtResource("2_od8nd")
+
+[node name="userprofile2" type="Sprite2D" parent="."]
+position = Vector2(435, 666)
+scale = Vector2(0.432432, 0.432432)
+texture = ExtResource("3_du3lw")

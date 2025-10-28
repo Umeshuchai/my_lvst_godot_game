@@ -1,0 +1,23 @@
+config_version=5
+
+[application]
+
+config/name="L vs T (4.4)"
+run/main_scene="uid://dsdxqeuibxrjy"
+config/features=PackedStringArray("4.4", "GL Compatibility")
+
+[autoload]
+
+Globaldata="*res://globaldata.gd"
+
+[display]
+
+window/size/viewport_width=720
+window/size/viewport_height=1000
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+lights_and_shadows/directional_shadow/soft_shadow_filter_quality=0

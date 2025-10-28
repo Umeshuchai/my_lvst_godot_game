@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://dukj1v2ay8u58"]
+
+[ext_resource type="Texture2D" uid="uid://bpkw3dv7edh53" path="res://img/Screenshot 2025-05-03 184308.png" id="1_kslmy"]
+
+[node name="first player" type="Node2D"]
+
+[node name="Screenshot2025-05-03184308" type="Sprite2D" parent="."]
+scale = Vector2(0.391566, 0.506329)
+texture = ExtResource("1_kslmy")

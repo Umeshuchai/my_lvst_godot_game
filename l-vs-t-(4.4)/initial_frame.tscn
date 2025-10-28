@@ -1,0 +1,178 @@
+[gd_scene load_steps=17 format=3 uid="uid://dsdxqeuibxrjy"]
+
+[ext_resource type="Script" uid="uid://do53mcfoddv0w" path="res://initial_fram.gd" id="1_ajbom"]
+[ext_resource type="Texture2D" uid="uid://bhjbgan7y7pqw" path="res://assets/home_background.png" id="2_yv7fq"]
+[ext_resource type="Texture2D" uid="uid://bmhs1bff6r6rt" path="res://assets/play button.png" id="3_x1t8n"]
+[ext_resource type="Texture2D" uid="uid://ckprwcqvon3sr" path="res://assets/background.webp" id="4_1nytq"]
+[ext_resource type="Texture2D" uid="uid://dv6k2ox0e2i1w" path="res://assets/Sound_img.png" id="6_1mbpj"]
+[ext_resource type="Texture2D" uid="uid://j1gi27gs1vh" path="res://assets/sound_on.png" id="6_1nytq"]
+[ext_resource type="Texture2D" uid="uid://ddokw21rx7mrt" path="res://assets/sound_off.png" id="7_1mbpj"]
+[ext_resource type="Texture2D" uid="uid://b1w8m5eve8gtt" path="res://assets/setting logo.png" id="9_1mbpj"]
+[ext_resource type="Texture2D" uid="uid://bqnwjtdthrw2o" path="res://assets/Mode_img.jpeg" id="9_avjrd"]
+[ext_resource type="Texture2D" uid="uid://cw0px73yussn" path="res://assets/closed_menu.png" id="10_amm24"]
+[ext_resource type="Texture2D" uid="uid://bjaj8di1uvwih" path="res://assets/opend_menu.png" id="11_aj43i"]
+[ext_resource type="Texture2D" uid="uid://wff3u5xsnwak" path="res://assets/5x5.jpeg" id="12_celtn"]
+[ext_resource type="Texture2D" uid="uid://cn1xb21es2cn8" path="res://assets/tick_img.png" id="13_tckyb"]
+[ext_resource type="Texture2D" uid="uid://jvaatm5h3tu2" path="res://assets/7x7.jpeg" id="13_yv7fq"]
+[ext_resource type="Texture2D" uid="uid://daubhhgbeb0xp" path="res://assets/okimg.png" id="15_yv7fq"]
+
+[sub_resource type="GDScript" id="GDScript_dxb76"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_ajbom")
+
+[node name="GameInitial" type="Sprite2D" parent="."]
+position = Vector2(366.358, 536.75)
+scale = Vector2(0.693255, 0.901855)
+texture = ExtResource("2_yv7fq")
+
+[node name="Pbutton" type="Button" parent="."]
+show_behind_parent = true
+offset_left = 296.0
+offset_top = 779.0
+offset_right = 626.0
+offset_bottom = 1146.0
+scale = Vector2(0.552, 0.36)
+
+[node name="playbutton" type="Sprite2D" parent="."]
+position = Vector2(360, 831.125)
+scale = Vector2(0.266, 0.2115)
+texture = ExtResource("3_x1t8n")
+
+[node name="play_sound" type="AudioStreamPlayer" parent="."]
+
+[node name="Uplogo" type="Sprite2D" parent="."]
+position = Vector2(358.709, 41.2233)
+scale = Vector2(1.23308, 0.254315)
+texture = ExtResource("4_1nytq")
+
+[node name="SettingLogo" type="Sprite2D" parent="."]
+position = Vector2(355, 44)
+scale = Vector2(0.0799004, 0.078)
+texture = ExtResource("9_1mbpj")
+
+[node name="Button" type="Button" parent="SettingLogo"]
+clip_children = 1
+offset_left = -476.0
+offset_top = -487.0
+offset_right = 501.0
+offset_bottom = 462.0
+
+[node name="Blur_layer" type="CanvasLayer" parent="SettingLogo"]
+
+[node name="blurrect" type="ColorRect" parent="SettingLogo/Blur_layer"]
+visible = false
+offset_right = 720.0
+offset_bottom = 995.0
+color = Color(0, 0.209986, 0.342369, 0.666667)
+
+[node name="menulayer" type="CanvasLayer" parent="SettingLogo"]
+
+[node name="menu" type="Control" parent="SettingLogo/menulayer"]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_left = 184.0
+offset_top = 152.0
+offset_right = 549.0
+offset_bottom = 727.0
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="SettingLogo/menulayer/menu"]
+
+[node name="SoundSetting" type="Sprite2D" parent="SettingLogo/menulayer/menu"]
+position = Vector2(176, 91)
+scale = Vector2(0.425501, 0.307412)
+texture = ExtResource("6_1mbpj")
+script = SubResource("GDScript_dxb76")
+
+[node name="Button" type="Button" parent="SettingLogo/menulayer/menu/SoundSetting"]
+clip_children = 1
+offset_left = -195.0
+offset_top = -80.0
+offset_right = 201.0
+offset_bottom = 88.0
+
+[node name="SoundOff" type="Sprite2D" parent="SettingLogo/menulayer/menu/SoundSetting"]
+position = Vector2(126.355, 4.9261)
+scale = Vector2(0.685262, 1.29855)
+texture = ExtResource("7_1mbpj")
+
+[node name="SoundOn" type="Sprite2D" parent="SettingLogo/menulayer/menu/SoundSetting"]
+position = Vector2(129.215, -1.52588e-05)
+scale = Vector2(0.670282, 1.30791)
+texture = ExtResource("6_1nytq")
+
+[node name="Mode" type="Sprite2D" parent="SettingLogo/menulayer/menu"]
+position = Vector2(174, 178)
+scale = Vector2(0.421767, 0.300336)
+texture = ExtResource("9_avjrd")
+
+[node name="OpenedMenu" type="Sprite2D" parent="SettingLogo/menulayer/menu/Mode"]
+position = Vector2(120.92, 6.65919)
+scale = Vector2(0.186942, 0.248262)
+texture = ExtResource("11_aj43i")
+
+[node name="ClosedMenu" type="Sprite2D" parent="SettingLogo/menulayer/menu/Mode"]
+position = Vector2(125.662, -1.52588e-05)
+scale = Vector2(0.0413524, 0.0678952)
+texture = ExtResource("10_amm24")
+
+[node name="Button" type="Button" parent="SettingLogo/menulayer/menu/Mode"]
+clip_children = 1
+offset_left = -216.0
+offset_top = -77.0
+offset_right = 218.0
+offset_bottom = 77.0
+
+[node name="mode_menu" type="Control" parent="SettingLogo/menulayer/menu/Mode"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -216.0
+offset_top = 77.0
+offset_right = 109.0
+offset_bottom = 566.0
+
+[node name="Five" type="Sprite2D" parent="SettingLogo/menulayer/menu/Mode/mode_menu"]
+position = Vector2(149.613, 152.743)
+scale = Vector2(1, 1.03468)
+texture = ExtResource("12_celtn")
+
+[node name="tick_img" type="Sprite2D" parent="SettingLogo/menulayer/menu/Mode/mode_menu/Five"]
+position = Vector2(84, 2)
+scale = Vector2(0.0702465, 0.0662489)
+texture = ExtResource("13_tckyb")
+
+[node name="Button" type="Button" parent="SettingLogo/menulayer/menu/Mode/mode_menu/Five"]
+clip_children = 1
+offset_left = -145.0
+offset_top = -68.0
+offset_right = 144.0
+offset_bottom = 68.0
+
+[node name="Seven" type="Sprite2D" parent="SettingLogo/menulayer/menu/Mode/mode_menu"]
+position = Vector2(149.613, 379.156)
+texture = ExtResource("13_yv7fq")
+
+[node name="tick_img" type="Sprite2D" parent="SettingLogo/menulayer/menu/Mode/mode_menu/Seven"]
+position = Vector2(84, 2)
+scale = Vector2(0.0721764, 0.0711115)
+texture = ExtResource("13_tckyb")
+
+[node name="Button" type="Button" parent="SettingLogo/menulayer/menu/Mode/mode_menu/Seven"]
+clip_children = 1
+offset_left = -147.0
+offset_top = -70.0
+offset_right = 149.0
+offset_bottom = 73.0
+
+[node name="Okimg" type="Sprite2D" parent="SettingLogo/menulayer/menu"]
+position = Vector2(176, 425)
+scale = Vector2(0.429407, 0.3063)
+texture = ExtResource("15_yv7fq")
+
+[node name="Button" type="Button" parent="SettingLogo/menulayer/menu/Okimg"]
+clip_children = 1
+offset_left = -217.0
+offset_top = -75.0
+offset_right = 219.0
+offset_bottom = 78.0

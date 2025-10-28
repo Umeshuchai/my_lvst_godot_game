@@ -1,0 +1,116 @@
+[gd_scene load_steps=11 format=3 uid="uid://bkulylgrdno3g"]
+
+[ext_resource type="Script" uid="uid://cs228euu6ii2i" path="res://gamemanager.gd" id="1_cikgk"]
+[ext_resource type="Texture2D" uid="uid://ckprwcqvon3sr" path="res://assets/background.webp" id="2_11ka4"]
+[ext_resource type="Texture2D" uid="uid://bmm4q3g1cdkk" path="res://assets/pause button.png" id="3_4asi2"]
+[ext_resource type="Texture2D" uid="uid://d00mxp2kc3jqi" path="res://board/fxf_board_img.png" id="3_tw36h"]
+[ext_resource type="Texture2D" uid="uid://bhihrjsm0kiym" path="res://assets/sxs_board_img.png" id="4_3f68o"]
+[ext_resource type="Texture2D" uid="uid://bmdbhiuu3ici7" path="res://assets/resume.png" id="5_7j27j"]
+[ext_resource type="Script" uid="uid://b5ovfx4ggv2ae" path="res://menu.gd" id="5_tw36h"]
+[ext_resource type="Texture2D" uid="uid://dn5ndi8e8eiu4" path="res://assets/menu_img.png" id="7_yahjx"]
+[ext_resource type="Texture2D" uid="uid://cxxyw3jun7fl5" path="res://assets/quit.png" id="9_yahjx"]
+[ext_resource type="Texture2D" uid="uid://duf6bo7uoojt6" path="res://assets/restart.png" id="10_5s570"]
+
+[node name="gamemanager" type="Node2D"]
+script = ExtResource("1_cikgk")
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(360.25, 500.125)
+scale = Vector2(1.22611, 2.77708)
+texture = ExtResource("2_11ka4")
+
+[node name="Board_fxf" type="Sprite2D" parent="."]
+position = Vector2(359.5, 477)
+scale = Vector2(0.916667, 0.915385)
+texture = ExtResource("3_tw36h")
+
+[node name="Board_sxs" type="Sprite2D" parent="."]
+position = Vector2(359.666, 474.5)
+scale = Vector2(0.92137, 0.921795)
+texture = ExtResource("4_3f68o")
+
+[node name="token_move_sound" type="AudioStreamPlayer" parent="."]
+
+[node name="PauseButton" type="Sprite2D" parent="."]
+position = Vector2(61, 64)
+scale = Vector2(0.06, 0.059)
+texture = ExtResource("3_4asi2")
+
+[node name="Button" type="Button" parent="PauseButton"]
+clip_children = 1
+anchors_preset = -1
+anchor_left = -0.611
+anchor_top = -0.306
+anchor_right = -0.611
+anchor_bottom = -0.306
+offset_left = 192.664
+offset_top = -144.656
+offset_right = 1092.66
+offset_bottom = 753.344
+
+[node name="BlurLayer" type="CanvasLayer" parent="."]
+layer = 0
+
+[node name="blur_rect" type="ColorRect" parent="BlurLayer"]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.14902, 0.65098, 0.796078, 0.392157)
+
+[node name="MenuLayer" type="CanvasLayer" parent="."]
+
+[node name="Menu" type="Control" parent="MenuLayer"]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_left = 209.0
+offset_top = 296.0
+offset_right = 512.0
+offset_bottom = 657.0
+script = ExtResource("5_tw36h")
+
+[node name="menu_bar" type="Sprite2D" parent="MenuLayer/Menu"]
+position = Vector2(151.5, 178.5)
+scale = Vector2(1.38855, 1.11085)
+texture = ExtResource("7_yahjx")
+
+[node name="Btn_sound" type="AudioStreamPlayer" parent="MenuLayer/Menu"]
+
+[node name="Resume" type="Sprite2D" parent="MenuLayer/Menu"]
+position = Vector2(154.5, 69)
+scale = Vector2(0.456332, 0.430769)
+texture = ExtResource("5_7j27j")
+
+[node name="Button" type="Button" parent="MenuLayer/Menu/Resume"]
+clip_children = 1
+offset_left = -225.0
+offset_top = -53.0
+offset_right = 225.0
+offset_bottom = 58.0
+
+[node name="MainMenu" type="Sprite2D" parent="MenuLayer/Menu"]
+position = Vector2(155.5, 248.87)
+scale = Vector2(0.321429, 0.306551)
+texture = ExtResource("9_yahjx")
+
+[node name="Button" type="Button" parent="MenuLayer/Menu/MainMenu"]
+clip_children = 1
+offset_left = -310.0
+offset_top = -84.0
+offset_right = 313.0
+offset_bottom = 87.0
+
+[node name="Restart" type="Sprite2D" parent="MenuLayer/Menu"]
+position = Vector2(155, 160)
+scale = Vector2(0.321484, 0.31016)
+texture = ExtResource("10_5s570")
+
+[node name="Button" type="Button" parent="MenuLayer/Menu/Restart"]
+clip_children = 1
+offset_left = -311.0
+offset_top = -81.0
+offset_right = 314.0
+offset_bottom = 77.0

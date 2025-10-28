@@ -1,0 +1,470 @@
+[gd_scene load_steps=44 format=3 uid="uid://dsdxqeuibxrjy"]
+
+[ext_resource type="Script" uid="uid://do53mcfoddv0w" path="res://initial_fram.gd" id="1_ajbom"]
+[ext_resource type="Texture2D" uid="uid://cqkxr1boq8ou3" path="res://assets/background_img.png" id="2_vtink"]
+[ext_resource type="Texture2D" uid="uid://chsupbim2uym8" path="res://button_imgs/pvp_btn_img.png" id="3_vtink"]
+[ext_resource type="AudioStream" uid="uid://kwpu5c5caglg" path="res://sounds/button-press-sound.mp3" id="4_h1eij"]
+[ext_resource type="Texture2D" uid="uid://hx2ly5b24373" path="res://board/Gemini_Generated_Image_ij7ojiij7ojiij7o-Photoroom.png" id="4_qwxeq"]
+[ext_resource type="Texture2D" uid="uid://bx3nsfjqy3poi" path="res://assets/menu_bar_img.png" id="6_h1eij"]
+[ext_resource type="Texture2D" uid="uid://ct8dey4y311mo" path="res://assets/blank_background_filler.jpg" id="6_xwv5l"]
+[ext_resource type="Shader" uid="uid://clggm17xb2cov" path="res://blur_rect.gdshader" id="7_h1eij"]
+[ext_resource type="Texture2D" uid="uid://di5kr6xltmfb7" path="res://button_imgs/continue_btn_img.png" id="7_tckyb"]
+[ext_resource type="Texture2D" uid="uid://cu0v75wo7u5v6" path="res://button_imgs/sound_btn_img.png" id="8_vtink"]
+[ext_resource type="Texture2D" uid="uid://b1w8m5eve8gtt" path="res://assets/setting logo.png" id="9_1mbpj"]
+[ext_resource type="Texture2D" uid="uid://f2bgsbtxyk2d" path="res://assets/sound_on_img.png" id="9_h1eij"]
+[ext_resource type="Texture2D" uid="uid://12pkpwx45to4" path="res://assets/sound_off_img.png" id="10_vtink"]
+[ext_resource type="Texture2D" uid="uid://c5i84nxf5b7n1" path="res://button_imgs/board_btn_img.png" id="11_83kpl"]
+[ext_resource type="Texture2D" uid="uid://b5a15odn5b3at" path="res://assets/pointer.png" id="11_tckyb"]
+[ext_resource type="Texture2D" uid="uid://ciy5ubphw1404" path="res://assets/selection_symbol.png" id="14_h1eij"]
+[ext_resource type="Texture2D" uid="uid://c8h3tplk87c4s" path="res://button_imgs/fxf_btn_img.png" id="14_qwxeq"]
+[ext_resource type="Texture2D" uid="uid://dfp45361kkvou" path="res://button_imgs/sxs_btn_img.png" id="16_g8guy"]
+[ext_resource type="Script" uid="uid://chtp3kg43qlhw" path="res://account_setup.gd" id="19_qa4mc"]
+[ext_resource type="Texture2D" uid="uid://cysdbexojemtd" path="res://button_imgs/blank_profile_img.png" id="20_xwv5l"]
+[ext_resource type="Shader" uid="uid://c2ml8hndmm8ml" path="res://profile.gdshader" id="21_lhnjl"]
+[ext_resource type="Texture2D" uid="uid://3vytg63arg1r" path="res://profile_frames/level_3.png" id="21_xwv5l"]
+[ext_resource type="Texture2D" uid="uid://cn72yh2g5q84b" path="res://assets/signup_bar_updated5.png" id="22_tdiv5"]
+[ext_resource type="Texture2D" uid="uid://c22cb35732now" path="res://button_imgs/next_btn_image.png" id="23_lhnjl"]
+[ext_resource type="Texture2D" uid="uid://c77b412bs1v4d" path="res://avatars/pp1.jpg" id="24_2xsoi"]
+[ext_resource type="Texture2D" uid="uid://foxc6n0ffd4t" path="res://avatars/pp2.png" id="25_3o8gj"]
+[ext_resource type="Texture2D" uid="uid://cb23cxpk83tcu" path="res://button_imgs/submit_btn_img.png" id="25_xwv5l"]
+[ext_resource type="Texture2D" uid="uid://bbv2krgmrjxof" path="res://avatars/pp3.png" id="26_qkdo2"]
+[ext_resource type="Texture2D" uid="uid://1b1nwby1uthh" path="res://avatars/pp4.png" id="27_xwv5l"]
+[ext_resource type="Texture2D" uid="uid://bls1w1o0vyn6c" path="res://avatars/pp5.png" id="28_wyaio"]
+[ext_resource type="Texture2D" uid="uid://00u84uu5o4vm" path="res://avatars/pp6.png" id="29_bmw6m"]
+[ext_resource type="Texture2D" uid="uid://w4crixqck7xe" path="res://avatars/pp7.png" id="30_fjsrj"]
+[ext_resource type="Texture2D" uid="uid://y1uahrgl6pf1" path="res://avatars/pp8.png" id="31_hg51r"]
+[ext_resource type="Texture2D" uid="uid://ckwstxocb86pj" path="res://avatars/pp9.png" id="32_j4ie4"]
+[ext_resource type="Texture2D" uid="uid://c60umrsjgq0a" path="res://avatars/pp10.png" id="33_k4oxk"]
+[ext_resource type="Texture2D" uid="uid://cjr6k6mmtvson" path="res://avatars/pp11.png" id="34_l0fwy"]
+[ext_resource type="Texture2D" uid="uid://c05bqmhskpgw4" path="res://avatars/pp12.png" id="35_21gc7"]
+[ext_resource type="Texture2D" uid="uid://djq2ovxy1vva5" path="res://avatars/pp13.png" id="36_md85j"]
+[ext_resource type="Texture2D" uid="uid://lm5csslmnjpa" path="res://avatars/pp14.png" id="37_0btkd"]
+[ext_resource type="Script" uid="uid://cc7s6thwftlvl" path="res://firebase_online_game_play.gd" id="39_qkdo2"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_vtink"]
+shader = ExtResource("7_h1eij")
+shader_parameter/blur_size = 2.0
+shader_parameter/blur_samples = 1
+
+[sub_resource type="GDScript" id="GDScript_dxb76"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_u6ktt"]
+shader = ExtResource("21_lhnjl")
+shader_parameter/blur_size = 2.0
+shader_parameter/blur_samples = 1
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_ajbom")
+
+[node name="GameInitial" type="Sprite2D" parent="."]
+position = Vector2(358.00003, 816.5001)
+scale = Vector2(0.79101557, 1.3525393)
+texture = ExtResource("2_vtink")
+
+[node name="pvp_btn" type="Sprite2D" parent="."]
+position = Vector2(200, 662)
+scale = Vector2(0.39128914, 0.6208179)
+texture = ExtResource("3_vtink")
+
+[node name="btn" type="Button" parent="pvp_btn"]
+clip_children = 1
+offset_left = -327.1238
+offset_top = -125.640686
+offset_right = 334.7908
+offset_bottom = 124.03003
+
+[node name="pvc_btn" type="Sprite2D" parent="."]
+position = Vector2(537.00006, 679)
+scale = Vector2(0.36745214, 0.61153835)
+texture = ExtResource("4_qwxeq")
+
+[node name="btn" type="Button" parent="pvc_btn"]
+clip_children = 1
+offset_left = -329.29456
+offset_top = -125.91193
+offset_right = 329.29456
+offset_bottom = 114.465515
+
+[node name="play_sound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_h1eij")
+
+[node name="Uplogo" type="Sprite2D" parent="."]
+position = Vector2(360.99997, 60.999996)
+scale = Vector2(1.1947194, 0.26694918)
+texture = ExtResource("6_xwv5l")
+
+[node name="SettingLogo" type="Sprite2D" parent="."]
+modulate = Color(0, 1.0569379, 0.11456511, 1)
+position = Vector2(669, 64)
+scale = Vector2(0.060458004, 0.05859375)
+texture = ExtResource("9_1mbpj")
+
+[node name="Button" type="Button" parent="SettingLogo"]
+clip_children = 1
+offset_left = -476.0
+offset_top = -487.0
+offset_right = 501.0
+offset_bottom = 462.0
+
+[node name="menulayer" type="CanvasLayer" parent="SettingLogo"]
+
+[node name="blur_rect" type="ColorRect" parent="SettingLogo/menulayer"]
+visible = false
+show_behind_parent = true
+material = SubResource("ShaderMaterial_vtink")
+clip_contents = true
+offset_left = -10.0
+offset_top = 3.0
+offset_right = 728.0
+offset_bottom = 1524.0
+
+[node name="menu" type="Control" parent="SettingLogo/menulayer"]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_left = 192.0
+offset_top = 517.0
+offset_right = 545.0
+offset_bottom = 1030.0
+
+[node name="color_rect" type="ColorRect" parent="SettingLogo/menulayer/menu"]
+layout_mode = 0
+offset_left = 45.0
+offset_top = 30.0
+offset_right = 306.0
+offset_bottom = 474.0
+color = Color(0.43602583, 0.74335355, 0.40010446, 0.8745098)
+
+[node name="menu_board" type="Sprite2D" parent="SettingLogo/menulayer/menu"]
+modulate = Color(0.20377783, 1.4964701, 0.56764674, 1)
+position = Vector2(175.19649, 251.99998)
+scale = Vector2(0.3357479, 0.36874998)
+texture = ExtResource("6_h1eij")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="SettingLogo/menulayer/menu"]
+
+[node name="Okimg" type="Sprite2D" parent="SettingLogo/menulayer/menu"]
+position = Vector2(187, 411)
+scale = Vector2(0.30584708, 0.20270282)
+texture = ExtResource("7_tckyb")
+
+[node name="Button" type="Button" parent="SettingLogo/menulayer/menu/Okimg"]
+clip_children = 1
+offset_left = -326.96082
+offset_top = -138.1333
+offset_right = 323.69122
+offset_bottom = 128.2666
+
+[node name="SoundSetting" type="Sprite2D" parent="SettingLogo/menulayer/menu"]
+position = Vector2(176, 91.49999)
+scale = Vector2(0.30838317, 0.18150684)
+texture = ExtResource("8_vtink")
+script = SubResource("GDScript_dxb76")
+
+[node name="Button" type="Button" parent="SettingLogo/menulayer/menu/SoundSetting"]
+clip_children = 1
+offset_left = -324.2719
+offset_top = -134.98123
+offset_right = 324.27197
+offset_bottom = 134.98105
+
+[node name="SoundOn" type="Sprite2D" parent="SettingLogo/menulayer/menu/SoundSetting"]
+modulate = Color(0.8217066, 1.8922116, 1.2499087, 1)
+position = Vector2(268.9559, -2.754734)
+scale = Vector2(0.17407613, 0.37294608)
+texture = ExtResource("9_h1eij")
+
+[node name="SoundOff" type="Sprite2D" parent="SettingLogo/menulayer/menu/SoundSetting"]
+modulate = Color(0.7246582, 3.6007304, 0.8684617, 1)
+position = Vector2(269.95636, -4.190142)
+scale = Vector2(0.09500146, 0.21910746)
+texture = ExtResource("10_vtink")
+
+[node name="Board" type="Sprite2D" parent="SettingLogo/menulayer/menu"]
+position = Vector2(176.99998, 167.5)
+scale = Vector2(0.30884558, 0.18707484)
+texture = ExtResource("11_83kpl")
+
+[node name="OpenedMenu" type="Sprite2D" parent="SettingLogo/menulayer/menu/Board"]
+modulate = Color(1.6589803, 8.470898, 3.021364, 1)
+position = Vector2(272.2112, -17.196106)
+rotation = 3.1388252
+scale = Vector2(0.37025136, 0.5626822)
+texture = ExtResource("11_tckyb")
+
+[node name="ClosedMenu" type="Sprite2D" parent="SettingLogo/menulayer/menu/Board"]
+modulate = Color(2.1324973, 8.193943, 2.8396666, 1)
+position = Vector2(255.79129, 26.727371)
+scale = Vector2(0.36853746, 0.5802634)
+texture = ExtResource("11_tckyb")
+
+[node name="Button" type="Button" parent="SettingLogo/menulayer/menu/Board"]
+clip_children = 1
+offset_left = -323.78644
+offset_top = -130.96368
+offset_right = 327.02423
+offset_bottom = 130.96368
+
+[node name="mode_menu" type="Control" parent="SettingLogo/menulayer/menu/Board"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -327.02423
+offset_top = 152.34546
+offset_right = 236.29224
+offset_bottom = 644.1272
+
+[node name="menu_board" type="Sprite2D" parent="SettingLogo/menulayer/menu/Board/mode_menu"]
+position = Vector2(263.88596, 293.99994)
+scale = Vector2(0.626316, 0.46772724)
+
+[node name="Five" type="Sprite2D" parent="SettingLogo/menulayer/menu/Board/mode_menu"]
+position = Vector2(323.7865, 165.70914)
+scale = Vector2(0.70644313, 0.90294814)
+texture = ExtResource("14_qwxeq")
+
+[node name="tick_img" type="Sprite2D" parent="SettingLogo/menulayer/menu/Board/mode_menu/Five"]
+modulate = Color(1.4257545, 6.810317, 0.4043535, 1)
+position = Vector2(217.92447, -11.384461)
+scale = Vector2(0.3941425, 0.23667887)
+texture = ExtResource("14_h1eij")
+
+[node name="Button" type="Button" parent="SettingLogo/menulayer/menu/Board/mode_menu/Five"]
+clip_children = 1
+offset_left = -323.77356
+offset_top = -136.61548
+offset_right = 317.54724
+offset_bottom = 136.61523
+
+[node name="Seven" type="Sprite2D" parent="SettingLogo/menulayer/menu/Board/mode_menu"]
+position = Vector2(322.16745, 446.34546)
+scale = Vector2(0.70047575, 0.8036875)
+texture = ExtResource("16_g8guy")
+
+[node name="tick_img" type="Sprite2D" parent="SettingLogo/menulayer/menu/Board/mode_menu/Seven"]
+modulate = Color(0.8986676, 4.1491857, 0.4298429, 1)
+position = Vector2(218.25464, 2.8729439e-05)
+scale = Vector2(0.39473355, 0.2382879)
+texture = ExtResource("14_h1eij")
+
+[node name="Button" type="Button" parent="SettingLogo/menulayer/menu/Board/mode_menu/Seven"]
+clip_children = 1
+offset_left = -324.26404
+offset_top = -132.0
+offset_right = 324.26404
+offset_bottom = 132.0
+
+[node name="account_setup" type="Node" parent="."]
+script = ExtResource("19_qa4mc")
+
+[node name="user_profile" type="Sprite2D" parent="account_setup"]
+position = Vector2(60.000004, 60)
+scale = Vector2(0.5276368, 0.52142864)
+texture = ExtResource("20_xwv5l")
+
+[node name="user_name" type="Label" parent="account_setup/user_profile"]
+offset_left = 75.809715
+offset_top = -80.54793
+offset_right = 302.80972
+offset_bottom = -25.547928
+theme_override_colors/font_color = Color(2.0184646, 0.17834541, 0.12729833, 1)
+theme_override_font_sizes/font_size = 40
+
+[node name="outer_frame" type="Sprite2D" parent="account_setup/user_profile"]
+position = Vector2(-0.8778719, -1.2516975e-05)
+scale = Vector2(0.5548148, 0.562249)
+texture = ExtResource("21_xwv5l")
+
+[node name="btn" type="Button" parent="account_setup/user_profile"]
+clip_children = 1
+offset_left = -60.77176
+offset_top = -64.24657
+offset_right = 60.523773
+offset_bottom = 62.32875
+
+[node name="opponent_profile" type="Sprite2D" parent="account_setup"]
+
+[node name="user_name" type="Label" parent="account_setup/opponent_profile"]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="blur_rect" type="ColorRect" parent="account_setup"]
+visible = false
+show_behind_parent = true
+material = SubResource("ShaderMaterial_u6ktt")
+clip_contents = true
+offset_right = 720.0
+offset_bottom = 1508.0
+
+[node name="input_menu" type="Control" parent="account_setup"]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="img" type="Sprite2D" parent="account_setup/input_menu"]
+modulate = Color(0.92197233, 1.3655106, 1.1859832, 1)
+position = Vector2(369.5, 605.5)
+scale = Vector2(0.5019268, 0.65830344)
+texture = ExtResource("22_tdiv5")
+
+[node name="warn" type="Label" parent="account_setup/input_menu/img"]
+visible = false
+offset_left = -369.57584
+offset_top = -17.70575
+offset_right = 285.8983
+offset_bottom = 45.29425
+theme_override_colors/font_color = Color(1, 0.14509805, 0.050980393, 1)
+theme_override_font_sizes/font_size = 45
+
+[node name="emailid" type="LineEdit" parent="account_setup/input_menu/img"]
+offset_left = -371.75864
+offset_top = 101.40576
+offset_right = 378.02414
+offset_bottom = 190.6416
+theme_override_colors/font_placeholder_color = Color(0, 0, 0, 0.2901961)
+theme_override_constants/caret_width = 2
+theme_override_font_sizes/font_size = 50
+placeholder_text = " "
+caret_blink = true
+
+[node name="username" type="LineEdit" parent="account_setup/input_menu/img"]
+offset_left = -371.56815
+offset_top = -96.46002
+offset_right = 377.54514
+offset_bottom = -5.3167114
+theme_override_constants/caret_width = 2
+theme_override_font_sizes/font_size = 45
+caret_blink = true
+
+[node name="Label" type="Label" parent="account_setup/input_menu/img"]
+visible = false
+offset_left = -373.56046
+offset_top = 178.66727
+offset_right = 369.57584
+offset_bottom = 241.66727
+theme_override_colors/font_color = Color(1.8247963, 0.14781046, 0.16877277, 1)
+theme_override_font_sizes/font_size = 45
+text = "Please enter a valid backup email."
+
+[node name="next_btn" type="TextureButton" parent="account_setup/input_menu/img"]
+offset_left = -192.25911
+offset_top = 269.63257
+offset_right = 467.7409
+offset_bottom = 557.63257
+scale = Vector2(0.56449133, 0.3744595)
+texture_normal = ExtResource("23_lhnjl")
+
+[node name="avatar_bar" type="ColorRect" parent="account_setup"]
+visible = false
+offset_left = 143.0
+offset_top = 337.0
+offset_right = 588.0
+offset_bottom = 965.0
+color = Color(0.19541112, 0.51511693, 0.29494217, 0.8627451)
+
+[node name="Submit_btn" type="TextureButton" parent="account_setup/avatar_bar"]
+layout_mode = 0
+offset_left = 125.0
+offset_top = 550.0
+offset_right = 1405.0
+offset_bottom = 1110.0
+scale = Vector2(0.14609377, 0.11964289)
+texture_normal = ExtResource("25_xwv5l")
+
+[node name="topic_label" type="Label" parent="account_setup/avatar_bar"]
+layout_mode = 0
+offset_left = 21.000015
+offset_top = 4.0
+offset_right = 419.0
+offset_bottom = 52.0
+theme_override_colors/font_color = Color(18.892157, 7.3418045, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "Please select your avatar."
+
+[node name="skip_label" type="Label" parent="account_setup/avatar_bar"]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 519.0
+offset_right = 430.0
+offset_bottom = 547.0
+theme_override_font_sizes/font_size = 17
+text = "You can skip or submit without choosing an avatar."
+
+[node name="img" type="Sprite2D" parent="account_setup/avatar_bar"]
+modulate = Color(0.5738217, 2.0713465, 0.435162, 1)
+position = Vector2(221.5, 315.99997)
+scale = Vector2(0.56623673, 0.5187501)
+texture = ExtResource("6_h1eij")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="account_setup/avatar_bar"]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 48.0
+offset_right = 425.0
+offset_bottom = 516.0
+
+[node name="GridContainer" type="GridContainer" parent="account_setup/avatar_bar/ScrollContainer"]
+layout_mode = 2
+theme_override_constants/h_separation = 15
+theme_override_constants/v_separation = 50
+columns = 3
+
+[node name="p_a1" type="TextureButton" parent="account_setup/avatar_bar/ScrollContainer/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("24_2xsoi")
+
+[node name="p_a2" type="TextureButton" parent="account_setup/avatar_bar/ScrollContainer/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("25_3o8gj")
+
+[node name="p_a3" type="TextureButton" parent="account_setup/avatar_bar/ScrollContainer/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("26_qkdo2")
+
+[node name="p_a4" type="TextureButton" parent="account_setup/avatar_bar/ScrollContainer/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("27_xwv5l")
+
+[node name="p_a5" type="TextureButton" parent="account_setup/avatar_bar/ScrollContainer/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("28_wyaio")
+
+[node name="p_a6" type="TextureButton" parent="account_setup/avatar_bar/ScrollContainer/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("29_bmw6m")
+
+[node name="p_a7" type="TextureButton" parent="account_setup/avatar_bar/ScrollContainer/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("30_fjsrj")
+
+[node name="p_a8" type="TextureButton" parent="account_setup/avatar_bar/ScrollContainer/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("31_hg51r")
+
+[node name="p_a9" type="TextureButton" parent="account_setup/avatar_bar/ScrollContainer/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("32_j4ie4")
+
+[node name="p_a10" type="TextureButton" parent="account_setup/avatar_bar/ScrollContainer/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("33_k4oxk")
+
+[node name="p_a11" type="TextureButton" parent="account_setup/avatar_bar/ScrollContainer/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("34_l0fwy")
+
+[node name="p_a12" type="TextureButton" parent="account_setup/avatar_bar/ScrollContainer/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("35_21gc7")
+
+[node name="p_a13" type="TextureButton" parent="account_setup/avatar_bar/ScrollContainer/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("36_md85j")
+
+[node name="p_a14" type="TextureButton" parent="account_setup/avatar_bar/ScrollContainer/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("37_0btkd")
+
+[node name="firebase_online_game_play" type="Node" parent="."]
+script = ExtResource("39_qkdo2")
